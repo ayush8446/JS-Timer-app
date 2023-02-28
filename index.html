@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Set Timer</h1>
+    <br><br>
+    <div class="container">
+        
+        <form>
+           <label for="hour">Hours:</label><br>
+           <input type="number" value="0" id="hour" name="hour" min="0"><br>
+           <label for="min">Minutes:</label><br>
+           <input type="number" value="0" id="min" name="min" min="0" max="59"><br>
+           <label for="sec">Seconds:</label><br>
+           <input type="number" value="0" id="sec" name="sec" min="0" max="59"><br>
+        </form>
+    </div>
+    <div class="buttons">
+        <br>
+        <br>
+        <br>
+        <button onclick="startTimer()">Start</button>
+        <button onclick="stopTimer()">Stop</button>
+        <button onclick="resetTimer()">Reset</button>
+        <div id="timer"></div>
+        <audio id="audio" src="beep-01a.mp3"></audio>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
